@@ -1,0 +1,163 @@
+body{
+    background-color: #edefee;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    animation: heading1 5s infinite ease;
+}
+
+@keyframes heading1 {
+    from{
+        transform: translateX(-100rem);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    animation: heading2 3s infinite ease;
+}
+@keyframes heading2 {
+    from{
+        color:black;
+    }
+    to{
+        color: gray;
+    }
+    
+}
+
+
+header > img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 1rem;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+nav a{
+    color: white;
+    text-decoration-line: none;
+    font-size: 1.5rem;
+    margin-inline: 5px;
+    
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+.section1{
+    background-image: url(food-at-little-lemon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.article1 h1{
+    color: white;
+}
+.article1 p{
+    color: white;
+    margin-right: 20%;
+}
+
+.section2{
+    gap: 0 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    
+    
+
+}
+.article2{
+    background-color: #f4e5d6;
+    border-radius: 1rem;
+}
+
+.article2 img{
+    width: 90%;
+    height: 15rem;
+    margin: auto;
+    
+}
+.image1{
+    animation: image1 5s infinite ease;
+}
+@keyframes image1 {
+    from{
+        transform: translateX(-10rem);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+.image2{
+    display: block;
+    animation: imgmove 2s infinite linear;
+    overflow: hidden;
+      z-index: -1;
+}
+
+@keyframes imgmove{
+    from{
+        opacity: 1;
+        transform: translateY(5rem);
+        
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+}
+
+
+.image3{
+    animation: image3 5s infinite ease;
+}
+
+@keyframes image3 {
+    from{
+        transform: translateX(5rem);
+    }
+    to{
+        transform: translateX(0rem);
+    }
+}
+.article2 p{
+    white-space: wrap;
+    margin-left: 1em;
+
+}
+footer{
+    display: flex;
+    margin-top: 1rem;
+}
+
+footer div{
+    flex: 1;
+}
+.copyright{
+    border-top: 2px solid black;
+    text-align: right;
+
+}
